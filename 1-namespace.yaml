@@ -1,0 +1,4 @@
+Kind: Namespace
+apiversion: V1
+metadata:
+  name: expense
