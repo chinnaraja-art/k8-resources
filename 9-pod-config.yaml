@@ -1,0 +1,11 @@
+kind: pod
+apiversion: v1
+metadata: 
+  name: pod-config
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    envfrom:
+    - configmapref:
+        name: myconfig

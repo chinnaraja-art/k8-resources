@@ -1,0 +1,7 @@
+kind: pod
+apiversion: v1
+metadata:
+  name: my config
+data:
+  course: "kubernetes"
+  duration: "26hrs"
