@@ -1,0 +1,13 @@
+apiversion: v1
+kind: persistentvolumes
+metadata:
+  name: ebs-static
+spec:
+   accessModes:
+   - ReadWriteOnce
+   capacity:
+     storage: 30Gi
+   csi:
+     driver: ebs.csi.aws.com
+     fsType: ext4
+     volumeHandle: vol-06237d8b3183eefc9  # This is we created volume id. we menctioned
